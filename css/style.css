@@ -43,3 +43,18 @@ html, body{
     width: 960px;
     margin: 0 auto;
 }
+
+/*----- Desktop -----*/
+@media (min-width: 1025px) {
+
+}
+
+/*----- Tablet -----*/
+@media (min-width: 451px) and (max-width: 1024px) {
+
+}
+
+/*----- Mobile -----*/
+@media (max-width: 450px) {
+    
+}
