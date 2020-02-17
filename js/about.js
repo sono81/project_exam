@@ -70,23 +70,19 @@ fetch('https://api.spacexdata.com/v3/info/')
                                 </tr>
                                 <tr>
                                     <td>Links:</td>
+                                    <td><a href="${info.links.website}">SpaceX - Website</a></td>
+                                </tr>
+                                <tr>
                                     <td></td>
+                                    <td><a href="${info.links.flickr}">SpaceX - Flickr</a></td>
                                 </tr>
                                 <tr>
-                                    <td>Website:</td>
-                                    <td>${info.links.website}</td>
+                                    <td></td>
+                                    <td><a href="${info.links.twitter}">SpaceX - Twitter</a></td>
                                 </tr>
                                 <tr>
-                                    <td>Flickr:</td>
-                                    <td>${info.links.flickr}</td>
-                                </tr>
-                                <tr>
-                                    <td>Twitter:</td>
-                                    <td>${info.links.twitter}</td>
-                                </tr>
-                                <tr>
-                                    <td>Elon's Twitter:</td>
-                                    <td>${info.links.elon_twitter}</td>
+                                    <td></td>
+                                    <td><a href="${info.links.elon_twitter}">Elon Musk - Twitter</a></td>
                                 </tr>
                             </table>
                             `

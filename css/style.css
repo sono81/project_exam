@@ -25,6 +25,7 @@ body {
 
 }
 
+footer,
 .footer {
     background: #000000;
     color: #dddddd;
@@ -81,7 +82,8 @@ body {
         max-height: 10vh;
     }
 
-    .content-main {
+    .content-main,
+    .content {
         text-align: left;
         color: #dddddd;
     }
@@ -104,6 +106,19 @@ body {
 
     .event-info {
         font-size: 24px;
+    }
+
+    .content{
+        margin-bottom: 5px;
+    }
+
+    td:nth-of-type(2) {
+        padding-left: 10px;
+    }
+
+    td a {
+        text-decoration: none;
+        color: #dddddd;
     }
 
 
@@ -162,9 +177,15 @@ body {
 
     /*----- Footer Start -----*/
 
-    footer {
+    .footer {
         min-height: 75px;
         position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    footer {
+        min-height: 75px;
         bottom: 0;
         width: 100%;
     }
