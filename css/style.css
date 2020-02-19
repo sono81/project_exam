@@ -89,18 +89,22 @@ footer,
     }
 
     .bgcolor-main {
-        max-height: 100px;
+        max-height: 98px;
         background: rgba(0, 0, 0, 0.75);
     }
 
     .next-event,
+    .rocket-name,
     .event-info {
         text-align: center;
-        padding: 5px 0;
         margin: 0;
     }
 
     .next-event {
+        font-size: 18px;
+    }
+
+    .rocket-name {
         font-size: 36px;
     }
 
