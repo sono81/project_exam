@@ -11,9 +11,9 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <!--<header class="header">
             SpaceX
-        </header>
+        </header>-->
         <nav>
             <div class="fixed-menu">
               <div id="toggle">
@@ -25,30 +25,34 @@
               </div>
             </div>
             <ul class="menuContent">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About SpaceX</a></li>
-              <li><a href="#">Rockets</a></li>
-              <li><a href="#">Missions</a></li>
-              <li><a href="#">Launches</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About SpaceX</a></li>
+              <li><a href="rockets.html">Rockets</a></li>
+              <li><a href="missions.html">Missions</a></li>
+              <li><a href="launches.html">Launches</a></li>
             </ul>
           </nav>
         <div class="bgcolor">
             <article class="content">
-                <p class="next-event">
-                    Next Event
-                </p>
-                <p class="event-info">
-                    123d 12h 31m
-                </p>
+                <select id="selection">
+
+                </select>
+
+                <div id="content">Please select a mission in the list above...<br>
+                                  (Give it a second)
+                </div>
+                <!--
+                    Populated By launches.js
+                -->
+
             </article>
         </div>
-        <footer class="footer">
+        <footer>
             Footer
         </footer>
     </div>
-
     <script src="js/menu.js"></script>
-
+    <script src="js/launches.js"></script>
 </body>
 
 </html>

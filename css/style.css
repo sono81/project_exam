@@ -111,7 +111,11 @@ footer,
     .content{
         margin-bottom: 5px;
         min-height: 70vh;
-        padding: 0 15px;
+        padding: 0 3px;
+    }
+
+    td {
+        padding: 5px 0;
     }
 
     td:nth-of-type(2) {
@@ -120,23 +124,33 @@ footer,
 
     td a {
         text-decoration: none;
-        color: #dddddd;
+        color: #757F9D;
     }
 
     #selection {
         display: block;
         margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
         height: 36px;
         border: 3px solid #757F9D;
         color: #757F9D;
         font-size: 18px;
         border-radius: 18px;
         padding: 0 15px;
-        margin-bottom: 10px;
+        max-width: 300px;
     }
 
     table tr td {
         vertical-align: text-top;
+    }
+
+    .patch {
+        display: block;
+        margin: 0 auto;
+        height: 100px;
+        margin-bottom: 50px;
+        margin-top: 10px;
     }
 
 
