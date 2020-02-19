@@ -11,9 +11,9 @@
 
 <body>
     <div class="wrapper">
-        <!--<header class="header">
+        <header class="header">
             SpaceX
-        </header>-->
+        </header>
         <nav>
             <div class="fixed-menu">
               <div id="toggle">
@@ -35,6 +35,38 @@
           </nav>
         <div class="bgcolor">
             <article class="content">
+
+              <form>
+                <fieldset>
+                  <legend>
+                    Contact us:
+                  </legend>
+
+                  <label>
+                    Name:                   
+                  </label>
+                  <input type="text" name="name"><br>
+
+                  <label>
+                    Email:
+                  </label>
+                  <input type="email" name="email">  
+
+                  <label for="message">
+                    Message <span id="small">(360 characters)</span>
+                  </label>
+
+                  <textarea rows="7" cols="35" id="message" maxlength="360">
+                  </textarea>
+
+                  <label>
+                    <input type="checkbox" checked="checked" name="newsletter" />
+                    Sign up to our newsletter
+                  </label>
+                  <input type="submit" value="Submit Message" id="button">
+
+                </fieldset>
+              </form>
                 
             </article>
         </div>
@@ -43,7 +75,7 @@
         </footer>
     </div>
     <script src="js/menu.js"></script>
-    <script src="js/rockets.js"></script>
+    <script src="js/contact.js"></script>
 </body>
 
 </html>
