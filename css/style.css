@@ -237,7 +237,6 @@ footer,
         width: 60px;
         background-color: #757F9D;
         text-align: center;
-        vertical-align: middle;
         border-radius: 50%;
     }
 
@@ -246,7 +245,6 @@ footer,
         text-decoration: none;
         font-weight: 600;
         font-size: 36px;
-        vertical-align: middle;
         color: #000000;
         padding: 20px;
     }
@@ -423,7 +421,7 @@ footer,
     .menuContent {
         display: none;
         position: fixed;
-        bottom: 75px;
+        bottom: 100px;
         left: 0;
         background-color: #E3E6EF;
         width: 100%;
@@ -445,7 +443,6 @@ footer,
         width: 40px;
         background-color: #757F9D;
         text-align: center;
-        vertical-align: middle;
         border-radius: 50%;
     }
 
@@ -454,7 +451,6 @@ footer,
         text-decoration: none;
         font-weight: 600;
         font-size: 24px;
-        vertical-align: middle;
         color: #000000;
         padding: 20px;
     }
