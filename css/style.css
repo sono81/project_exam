@@ -66,6 +66,224 @@ footer,
         background-image: url(../img/tablet/background_768.jpg);
         background-size: cover;
     }
+
+    .header {
+        font-size: 72px;
+        background: #000000;
+        color: #dddddd;
+        max-height: 10vh;
+    }
+
+    .content-main,
+    .content {
+        text-align: left;
+        color: #dddddd;
+        font-size: 22px;
+    }
+
+    .bgcolor-main {
+        max-height: 170px;
+        background: rgba(0, 0, 0, 0.75);
+    }
+
+    .next-event,
+    .rocket-name,
+    .event-info {
+        text-align: center;
+        margin: 0;
+    }
+
+    .next-event {
+        font-size: 36px;
+    }
+
+    .rocket-name {
+        font-size: 60px;
+    }
+
+    .event-info {
+        font-size: 36px;
+    }
+
+    .content{
+        margin-bottom: 130px;
+        padding: 0 25px;
+    }
+
+    td {
+        padding: 5px 0;
+    }
+
+    td:nth-of-type(2) {
+        padding-left: 10px;
+    }
+
+    td a {
+        text-decoration: none;
+        color: #757F9D;
+    }
+
+    #selection {
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 50px;
+        border: 3px solid #757F9D;
+        color: #757F9D;
+        font-size: 25px;
+        border-radius: 24px;
+        padding: 0 15px;
+        max-width: 300px;
+    }
+
+    table tr td {
+        vertical-align: text-top;
+    }
+
+    .patch {
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        margin-bottom: 50px;
+        margin-top: 20px;
+    }
+
+    /*----- Form Start -----*/
+
+    .bgcolor-form {
+        position: absolute;
+        top: 122px;
+        width: 100%;
+        height: 85%;
+        padding: 0;
+    }
+
+    label {
+        display: block;
+        min-width: 75px;
+    }
+
+    input,
+    textarea {
+        margin: 3px 0 10px;
+        border: 2px solid #757F9D;
+        font-size: 24px;
+    }
+
+    input {
+        height: 35px;
+        min-width: 20px;
+    }
+
+    textarea {
+        height: 175px;
+        width: 450px;
+    }
+
+    fieldset {
+        border: 3px solid #757F9D;
+    }
+
+    legend {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+    #button {
+        background: #757F9D;
+        border: 2px solid #dddddd;
+        border-radius: 30px;
+        height: 60px;
+        padding: 0 20px;
+        font-family: inherit;
+        font-size: 28px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+    #small {
+        font-size: 14px;
+        color: #757F9D;
+    }
+
+    /*----- Form End -----*/
+
+
+    /*----- Menu Start -----*/
+    .menuContent {
+        display: none;
+        position: fixed;
+        bottom: 75px;
+        left: 0;
+        background-color: #E3E6EF;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .menuContent.hamburger {
+        display: block;
+        bottom: 128px;
+    }
+
+    .fixed-menu {
+        position: fixed;
+        bottom: 37px;
+        right: 20px;
+        display: block;
+        height: 60px;
+        width: 60px;
+        background-color: #757F9D;
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 50%;
+    }
+
+    .menuContent a {
+        display: block;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 36px;
+        vertical-align: middle;
+        color: #000000;
+        padding: 20px;
+    }
+
+    .one,
+    .two,
+    .three {
+        display: block;
+        height: 5px;
+        width: 30px;
+        background-color: #000000;
+        margin: 6px 0;
+    }
+
+    #burger-icon {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+    }
+
+    /*----- Menu End -----*/
+
+    /*----- Footer Start -----*/
+
+    footer {
+        height: 130px;
+        position: fixed;
+        bottom: 0px;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    /*----- Footer End -----*/
 }
 
 /*----- Mobile -----*/
@@ -184,7 +402,7 @@ footer,
 
     #button {
         background: #757F9D;
-        border: 1px solid #757F9D;
+        border: 2px solid #dddddd;
         border-radius: 15px;
         height: 30px;
         padding: 0 20px;
@@ -264,13 +482,6 @@ footer,
     /*----- Menu End -----*/
 
     /*----- Footer Start -----*/
-
-    .footer {
-        min-height: 75px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
 
     footer {
         min-height: 75px;
