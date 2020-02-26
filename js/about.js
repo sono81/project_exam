@@ -12,7 +12,9 @@ fetch('https://api.spacexdata.com/v3/info/')
     var content = document.querySelector('.content')
 
     function createInfo(info) {
-        content.innerHTML = `   <p>
+        content.innerHTML = `   
+                            <div id="center">
+                                <p id="summary">
                                     ${info.summary}
                                 </p>
                             <table>
@@ -85,6 +87,7 @@ fetch('https://api.spacexdata.com/v3/info/')
                                     <td><a href="${info.links.elon_twitter}">Elon Musk - Twitter</a></td>
                                 </tr>
                             </table>
+                            </div>
                             `
 
         console.log(info);

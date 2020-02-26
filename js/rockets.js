@@ -38,7 +38,7 @@ fetch('https://api.spacexdata.com/v3/rockets/')
 
         filteredRockets.forEach(function(rocket) {
             content.innerHTML += `
-            <table>
+            <table class="js-table">
                 <tr>
                     <td>Name:</td>
                     <td>${rocket.rocket_name}</td>

@@ -41,7 +41,7 @@ fetch('https://api.spacexdata.com/v3/missions/')
             var str = `${mission.payload_ids}`.split(',').join('<br>');
 
             content.innerHTML += `
-            <table>
+            <table class="js-table">
                 <tr>
                     <td>Name:</td>
                     <td>${mission.mission_name}</td>

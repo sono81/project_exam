@@ -50,7 +50,7 @@ fetch('https://api.spacexdata.com/v3/launches/')
 
 
             content.innerHTML += `
-            <table>
+            <table class="js-table">
                 <tr>
                     <td>Name:</td>
                     <td>${launch.mission_name}</td>
