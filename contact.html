@@ -32,7 +32,7 @@
         <li><a href="rockets.html">Rockets</a></li>
         <li><a href="missions.html">Missions</a></li>
         <li><a href="launches.html">Launches</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
     <div class="bgcolor bgcolor-form">
@@ -44,17 +44,26 @@
             </legend>
 
             <label>
-              Name:
+              First name:
             </label>
-            <input type="text" name="name"><br>
+            <input type="text" name="name" id="firstName">
+            <span id="firstNameError" class="error">Please enter a valid first name</span><br>
+            
+            <label>
+              Last name:
+            </label>
+            <input type="text" name="name" id="lastName">
+            <span id="lastNameError" class="error">Please enter a valid last name</span><br>
+            
 
             <label>
               Email:
             </label>
-            <input type="email" name="email">
+            <input type="email" name="email" id="email">
+            <span id="emailError" class="error">Please enter a valid email address</span>
 
             <label for="message">
-              Message <span id="small">(360 characters)</span>
+              Message <div id="small">(360 characters)</div>
             </label>
 
             <textarea rows="7" cols="35" id="message" maxlength="360"></textarea>
