@@ -17,11 +17,21 @@ p {
 .wrapper {
     text-align: center;
     min-height: 100vh;
+    background-size: cover;
 }
 
 .wrapper>* {
     padding: 10px;
 
+}
+.header {
+    background: #000000;
+    color: #dddddd;
+    max-height: 10vh;
+}
+
+.content {
+    min-height: 90vh;
 }
 
 footer,
@@ -35,6 +45,10 @@ footer,
 }
 
 .bgcolor-main {
+    padding: 0px;
+}
+
+.bgcolor {
     padding: 0px;
 }
 
@@ -63,8 +77,70 @@ footer,
 span {
     display: none;
     font-size: 14px;
-    color: #ff6666;
-    
+    color: #ff6666;  
+}
+
+td a {
+    text-decoration: none;
+    color: #757F9D;
+}
+
+td:nth-of-type(2) {
+    padding-left: 10px;
+}
+
+#selection {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid #757F9D;
+    color: #757F9D;
+    font-size: 18px;
+    max-width: 300px;
+}
+
+.patch {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.menuContent {
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    min-width: 75px;
+}
+
+input,
+textarea {
+    margin: 3px 0 5px;
+    border: 2px solid #757F9D;
+}
+
+fieldset {
+    border: 3px solid #757F9D;
+}
+
+legend {
+    padding: 0 10px;
+}
+
+#button {
+    background: #757F9D;
+    border: 2px solid #dddddd;
+    font-family: inherit;
+    padding: 0 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#small {
+    color: #757F9D;
 }
 
 /*----- Desktop -----*/
@@ -72,16 +148,14 @@ span {
 
     .wrapper {
         background-image: url(../img/desktop/background_1080.jpg);
-        background-size: cover;
     }
 
     .header {
         font-size: 72px;
         font-weight: 600;
-        background: #000000;
-        color: #dddddd;
         max-height: 100px;
     }
+    
     .logo {
         height: 30px;
     }
@@ -93,16 +167,6 @@ span {
         width: 960px;
         margin: 0 auto;
         padding: 15px 20px 30px;
-        min-height: 90vh;
-    }
-
-    a {
-        text-decoration: none;
-        color: #757F9D;
-    }
-
-    .bgcolor {
-        padding: 0px;
     }
 
     .next-event,
@@ -123,16 +187,8 @@ span {
     }
 
     #selection {
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        border: 3px solid #757F9D;
-        color: #757F9D;
-        font-size: 18px;
         border-radius: 19px;
         padding: 5px 15px;
-        max-width: 300px;
     }
 
     .js-table {
@@ -141,15 +197,8 @@ span {
         text-align: left;
     }
 
-    td:nth-of-type(2) {
-        padding-left: 10px;
-    }
-
     .patch {
-        display: block;
-        margin: 0 auto;
         height: 200px;
-        margin-bottom: 50px;
         margin-top: 20px;
     }
 
@@ -163,11 +212,6 @@ span {
         background: rgba(0, 0, 0, 0.75);
         padding: 0;
         max-height: 40px;
-    }
-
-    .menuContent {
-        padding: 0;
-        margin: 0;
     }
 
     li {
@@ -202,15 +246,8 @@ span {
         padding: 0;
     }
 
-    label {
-        display: block;
-        min-width: 75px;
-    }
-
     input,
     textarea {
-        margin: 3px 0 5px;
-        border: 2px solid #757F9D;
         font-size: 16px;
         padding: 1px 3px;
     }
@@ -225,25 +262,17 @@ span {
     }
 
     fieldset {
-        border: 3px solid #757F9D;
         width: 60%;
         margin: 0 auto;
     }
 
     legend {
         font-size: 28px;
-        padding: 0 10px;
     }
 
     #button {
-        background: #757F9D;
-        border: 2px solid #dddddd;
         border-radius: 30px;
-        padding: 0 20px;
-        font-family: inherit;
         font-size: 18px;
-        font-weight: 600;
-        margin-top: 10px;
     }
 
     #button:hover {
@@ -252,7 +281,6 @@ span {
 
     #small {
         font-size: 14px;
-        color: #757F9D;
     }
 
     /*----- Form End -----*/
@@ -263,15 +291,12 @@ span {
 @media (min-width: 451px) and (max-width: 1024px) {
     .wrapper {
         background-image: url(../img/tablet/background_768.jpg);
-        background-size: cover;
     }
 
     .header {
         font-size: 72px;
-        background: #000000;
-        color: #dddddd;
-        max-height: 10vh;
     }
+
     .logo {
         height: 30px;
     }
@@ -285,13 +310,8 @@ span {
         font-size: 60px;
     }
 
-    .bgcolor {
-        padding: 0;
-    }
-
     .content {
         padding: 10px 25px;
-        min-height: 90vh;
         font-size: 24px;
     }
 
@@ -299,27 +319,10 @@ span {
         padding: 5px 0;
     }
 
-    td:nth-of-type(2) {
-        padding-left: 10px;
-    }
-
-    td a {
-        text-decoration: none;
-        color: #757F9D;
-    }
-
     #selection {
-        display: block;
-        margin: 0 auto;
-        margin-top: 20px;
-        margin-bottom: 20px;
         height: 50px;
-        border: 3px solid #757F9D;
-        color: #757F9D;
-        font-size: 25px;
         border-radius: 24px;
         padding: 0 15px;
-        max-width: 300px;
     }
 
     table tr td {
@@ -331,32 +334,20 @@ span {
     }
 
     .patch {
-        display: block;
-        margin: 0 auto;
         height: 200px;
-        margin-bottom: 50px;
         margin-top: 20px;
     }
 
     /*----- Form Start -----*/
 
     .bgcolor-form {
-        position: absolute;
-        top: 122px;
         width: 100%;
         height: 85%;
         padding: 0;
     }
 
-    label {
-        display: block;
-        min-width: 75px;
-    }
-
     input,
     textarea {
-        margin: 3px 0 10px;
-        border: 2px solid #757F9D;
         font-size: 24px;
     }
 
@@ -370,30 +361,18 @@ span {
         width: 450px;
     }
 
-    fieldset {
-        border: 3px solid #757F9D;
-    }
-
     legend {
         font-size: 28px;
-        padding: 0 10px;
     }
 
     #button {
-        background: #757F9D;
-        border: 2px solid #dddddd;
         border-radius: 30px;
         height: 60px;
-        padding: 0 20px;
-        font-family: inherit;
         font-size: 28px;
-        font-weight: 600;
-        margin-top: 10px;
     }
 
     #small {
         font-size: 14px;
-        color: #757F9D;
     }
 
     /*----- Form End -----*/
@@ -408,8 +387,6 @@ span {
         background-color: #E3E6EF;
         width: 100%;
         text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
     .menuContent .active {
@@ -481,20 +458,15 @@ span {
 @media (max-width: 450px) {
     .wrapper {
         background-image: url(../img/mobile/background_414.jpg);
-        background-size: cover;
     }
 
     .header {
         font-size: 48px;
-        background: #000000;
-        color: #dddddd;
-        max-height: 10vh;
     }
 
     .content-main,
     .content {
         text-align: left;
-        color: #dddddd;
     }
 
     .bgcolor-main {
@@ -516,21 +488,11 @@ span {
 
     .content {
         margin-bottom: 5px;
-        min-height: 90vh;
         padding: 10px 3px;
     }
 
     td {
         padding: 5px 0 5px 10px;
-    }
-
-    td:nth-of-type(2) {
-        padding-left: 10px;
-    }
-
-    td a {
-        text-decoration: none;
-        color: #757F9D;
     }
     
     table {
@@ -538,16 +500,9 @@ span {
     }
 
     #selection {
-        display: block;
-        margin: 0 auto;
-        margin-bottom: 20px;
         height: 36px;
-        border: 3px solid #757F9D;
-        color: #757F9D;
-        font-size: 18px;
         border-radius: 18px;
         padding: 0 15px;
-        max-width: 300px;
     }
 
     table tr td {
@@ -555,15 +510,8 @@ span {
     }
 
     .patch {
-        display: block;
-        margin: 0 auto;
         height: 100px;
-        margin-bottom: 50px;
         margin-top: 10px;
-    }
-
-    .bgcolor {
-        padding: 0;
     }
 
     #summary {
@@ -571,24 +519,8 @@ span {
     }
 
     /*----- Form Start -----*/
-
-    label {
-        display: block;
-        min-width: 75px;
-    }
-
-    input,
-    textarea {
-        margin: 3px 0 10px;
-        border: 2px solid #757F9D;
-    }
-
     input {
         height: 20px;
-    }
-
-    fieldset {
-        border: 2px solid #757F9D;
     }
 
     legend {
@@ -596,19 +528,13 @@ span {
     }
 
     #button {
-        background: #757F9D;
-        border: 2px solid #dddddd;
         border-radius: 15px;
         height: 30px;
-        padding: 0 20px;
-        font-family: inherit;
         font-size: 16px;
-        font-weight: 600;
     }
 
     #small {
         font-size: 12px;
-        color: #757F9D;
     }
 
     /*----- Form End -----*/
@@ -623,8 +549,6 @@ span {
         background-color: #E3E6EF;
         width: 100%;
         text-align: center;
-        margin: 0;
-        padding: 0;
     }
 
     .menuContent .active {
