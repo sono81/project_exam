@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree');
 
-/*
-Blueish grey: #757F9D
-
-*/
-
 html,
 body,
 header,
@@ -178,6 +173,15 @@ legend {
         font-size: 60px;
     }
 
+    .rocket-name a {
+        text-decoration: none;
+        color: #dddddd;
+    }
+
+    .rocket-name a:hover {
+        color: #757F9D;
+    }
+    
     #content {
         text-align: center;
     }
@@ -382,7 +386,7 @@ legend {
     .menuContent {
         display: none;
         position: fixed;
-        bottom: 75px;
+        bottom: 140px;
         left: 0;
         background-color: #E3E6EF;
         width: 100%;
@@ -395,7 +399,6 @@ legend {
 
     .menuContent.hamburger {
         display: block;
-        bottom: 128px;
     }
 
     .fixed-menu {
@@ -544,7 +547,7 @@ legend {
     .menuContent {
         display: none;
         position: fixed;
-        bottom: 100px;
+        bottom: 82px;
         left: 0;
         background-color: #E3E6EF;
         width: 100%;

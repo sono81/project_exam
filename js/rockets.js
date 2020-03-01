@@ -20,7 +20,6 @@ fetch('https://api.spacexdata.com/v3/rockets/')
             <option value="${rocket.rocket_name}">${rocket.rocket_name}</option>
             `
         });
-        console.log(rocketObj);
     };
 
     selection.addEventListener('change', filterRockets);

@@ -9,10 +9,10 @@ fetch('https://api.spacexdata.com/v3/info/')
         console.log(error);
     });
 
-    var content = document.querySelector('.content')
+var content = document.querySelector('.content');
 
-    function createInfo(info) {
-        content.innerHTML = `   
+function createInfo(info) {
+    content.innerHTML += `   
                             <div id="center">
                                 <p id="summary">
                                     ${info.summary}
@@ -86,9 +86,7 @@ fetch('https://api.spacexdata.com/v3/info/')
                                     <td></td>
                                     <td><a href="${info.links.elon_twitter}">Elon Musk - Twitter</a></td>
                                 </tr>
-                            </table>
+                            </table>                         
                             </div>
                             `
-
-        console.log(info);
-    }
+}
