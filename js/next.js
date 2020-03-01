@@ -30,6 +30,6 @@ function createInfo(next) {
     }, 1000);
 
     nextEventName.innerHTML += `
-    ${next.mission_name}
+    <a href="${next.links.reddit_campaign}" target="_blank">${next.mission_name}</a>
     `
 }
